@@ -57,6 +57,11 @@ export const Border = styled.div`
   position: relative;
   border-radius: 2px;
   background: linear-gradient(to right, #9358f7, #10d7e2);
+  transition: opacity 2s ease-in-out;
+
+  *:hover {
+    opacity: 0.9;
+  }
 `;
 
 export const LinkedInLink = styled.a`

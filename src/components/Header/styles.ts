@@ -34,4 +34,8 @@ export const Option = styled.li`
   color: #c4c4c4;
   font-size: 18px;
   cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;

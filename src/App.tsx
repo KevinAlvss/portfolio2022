@@ -1,10 +1,11 @@
-import { Header, Presentation } from "./components";
+import { AboutMe, Header, Presentation } from "./components";
 
 function App() {
   return (
     <>
       <Header />
       <Presentation />
+      <AboutMe />
     </>
   );
 }
