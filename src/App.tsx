@@ -1,11 +1,11 @@
-import { AboutMe, Header, Presentation } from "./components";
+import { AboutMe, Experiences, Presentation } from "./components";
 
 function App() {
   return (
     <>
-      <Header />
       <Presentation />
       <AboutMe />
+      <Experiences />
     </>
   );
 }
