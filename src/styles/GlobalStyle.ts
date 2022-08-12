@@ -22,4 +22,16 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         color: #fff;
     }
+
+    ::-webkit-scrollbar {
+    width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+    background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #D24074, #6518B4);
+    }
 `;
