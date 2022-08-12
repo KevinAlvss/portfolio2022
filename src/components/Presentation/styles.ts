@@ -3,7 +3,7 @@ import polygon from "../../assets/polygon.svg";
 
 export const Container = styled.div`
   width: 100%;
-  height: 80vh;
+  height: 75vh;
 `;
 
 export const Content = styled.div`

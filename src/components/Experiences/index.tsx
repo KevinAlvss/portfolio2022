@@ -1,52 +1,65 @@
+import { useEffect, useState } from "react";
 import {
   Container,
   Content,
   Title,
   ExperiencesBox,
   Experience,
+  InterpriseBox,
+  InterpriseButton,
   ExperienceTitle,
   ExperienceInterprise,
   ExperienceDescription,
 } from "./styles";
 
 export function Experiences() {
+  const [experienceTitle, setExperienceTitle] = useState("");
+  const [experienceInterprise, setExperienceInterprise] = useState("");
+  const [experienceDescription, setExperienceDescription] = useState("");
+
+  function handleExperience(interprise: string) {
+    switch (interprise) {
+      case "zak":
+        setExperienceTitle("Desenvolvedor Fullstack Junior");
+        setExperienceInterprise(interprise.toUpperCase());
+        setExperienceDescription(
+          "Na Zak eu trabalhei desenvolvendo novas features em diversas tecnologias, trazendo mais valor para nossa solução de replicação de dados na nuvem, e vizualização da saúde de servidores locais. Tecnologias utilizadas: ReactJs, Typescript, Styled-components, NodeJS e Kafka"
+        );
+        break;
+      case "pwi":
+        setExperienceTitle("Estágiario em engenharia de software");
+        setExperienceInterprise(interprise.toUpperCase());
+        setExperienceDescription(
+          "Desenvolvimentos de novas features para um ERP utilizado por laboratórios opticos, usando tecnologias como: React Native, JavaScript, SQL Server, C#, HTML, CSS"
+        );
+        break;
+    }
+  }
+
+  useEffect(() => {
+    handleExperience("zak");
+  }, []);
+
   return (
     <Container>
       <Content>
         <Title>Experiencias</Title>
         <ExperiencesBox>
           <Experience>
-            <ExperienceTitle>Desenvolvedor Fullstack Junior</ExperienceTitle>
-            <ExperienceInterprise>ZAK</ExperienceInterprise>
-            <ExperienceDescription>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </ExperienceDescription>
+            <InterpriseBox>
+              <InterpriseButton onClick={() => handleExperience("zak")}>
+                ZAK
+              </InterpriseButton>
+              <InterpriseButton onClick={() => handleExperience("pwi")}>
+                PWI
+              </InterpriseButton>
+            </InterpriseBox>
           </Experience>
           <Experience>
-            <ExperienceTitle>
-              Estágiario em engenharia de software
-            </ExperienceTitle>
-            <ExperienceInterprise>PWI</ExperienceInterprise>
+            <ExperienceTitle>{experienceTitle}</ExperienceTitle>
+            <ExperienceInterprise>{experienceInterprise}</ExperienceInterprise>
             <ExperienceDescription>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              {experienceDescription}
             </ExperienceDescription>
           </Experience>
         </ExperiencesBox>

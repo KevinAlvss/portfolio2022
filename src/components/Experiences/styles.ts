@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -33,6 +33,28 @@ export const Experience = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+`;
+
+export const InterpriseBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+export const InterpriseButton = styled.button`
+  background-color: transparent;
+  border: none;
+  color: #c4c4c4;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  border-left: 2px solid #151515;
+
+  &:hover {
+    background-color: #151515;
+    border-left: 2px solid #00d2df;
+  }
 `;
 
 export const ExperienceTitle = styled.h3`
