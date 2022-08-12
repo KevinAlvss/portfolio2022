@@ -21,17 +21,30 @@ export const Content = styled.div`
   background-image: url(${polygon});
   background-repeat: no-repeat;
   background-position: right;
+
+  @media (max-width: 990px) {
+    background-image: none;
+  }
 `;
 
 export const PresentationSection = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 990px) {
+    width: 100%;
+    align-items: center;
+  }
 `;
 
 export const Text = styled.p`
   text-transform: uppercase;
   font-weight: 600;
   font-size: 24px;
+
+  @media (max-width: 990px) {
+    font-size: 20px;
+  }
 `;
 
 export const NameTitle = styled.h1`
@@ -42,6 +55,10 @@ export const NameTitle = styled.h1`
   margin: 10px 0;
 
   color: #00d2df;
+
+  @media (max-width: 990px) {
+    font-size: 54px;
+  }
 `;
 
 export const LinkBox = styled.div`

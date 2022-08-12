@@ -27,6 +27,10 @@ export const Title = styled.h2`
 export const ExperiencesBox = styled.div`
   display: flex;
   gap: 50px;
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
 `;
 
 export const Experience = styled.div`
@@ -39,6 +43,10 @@ export const InterpriseBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media (max-width: 680px) {
+    flex-direction: row;
+  }
 `;
 
 export const InterpriseButton = styled.button`
@@ -55,6 +63,10 @@ export const InterpriseButton = styled.button`
   &:hover {
     background-color: #151515;
     border-left: 2px solid #00d2df;
+  }
+
+  @media (max-width: 680px) {
+    flex: 1;
   }
 `;
 

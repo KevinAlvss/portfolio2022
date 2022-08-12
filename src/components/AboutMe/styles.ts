@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 60vh;
   width: 100%;
   background-color: #151515;
+  padding: 100px 0;
 `;
 
 export const Content = styled.div`
@@ -25,10 +25,18 @@ export const ImageContainer = styled.div`
   > img {
     width: 80%;
   }
+
+  @media (max-width: 990px) {
+    display: none;
+  }
 `;
 
 export const TextContainer = styled.div`
   width: 50%;
+
+  @media (max-width: 990px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h2`
