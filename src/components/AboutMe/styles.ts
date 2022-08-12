@@ -50,4 +50,5 @@ export const Location = styled.h3`
 
 export const Text = styled.p`
   color: #c4c4c4;
+  font-size: 18px;
 `;
