@@ -50,6 +50,7 @@ export const InterpriseButton = styled.button`
   font-size: 18px;
   cursor: pointer;
   border-left: 2px solid #151515;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     background-color: #151515;
