@@ -24,14 +24,14 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar {
-    width: 8px;
+        width: 8px;
     }
 
     ::-webkit-scrollbar-track {
-    background: transparent;
+        background: transparent;
     }
 
     ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to top, #D24074, #6518B4);
+        background: linear-gradient(to top, #D24074, #6518B4);
     }
 `;
