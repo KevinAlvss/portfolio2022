@@ -16,25 +16,40 @@ export function Projects() {
         <Title>Projetos</Title>
         <ProjectsBox>
           <Project>
-            <ProjectTitle>Em breve</ProjectTitle>
+            <ProjectTitle>Password Generator</ProjectTitle>
             <ProjectDescription>
-              Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+              Gerador de senhas interativo
             </ProjectDescription>
-            <ProjectLink>Vizualizar projeto</ProjectLink>
+            <ProjectLink
+              href="https://strongpasswordgenerator.vercel.app/"
+              target={"_blank"}
+            >
+              Vizualizar projeto
+            </ProjectLink>
           </Project>
           <Project>
-            <ProjectTitle>Em breve</ProjectTitle>
+            <ProjectTitle>Banco inter</ProjectTitle>
             <ProjectDescription>
-              Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+              Estudo de animações e redesign do Banco Inter
             </ProjectDescription>
-            <ProjectLink>Vizualizar projeto</ProjectLink>
+            <ProjectLink
+              href="https://banco-inter-redesign-clone.vercel.app/"
+              target={"_blank"}
+            >
+              Vizualizar projeto
+            </ProjectLink>
           </Project>
           <Project>
-            <ProjectTitle>Em breve</ProjectTitle>
+            <ProjectTitle>LinkedIn Feed</ProjectTitle>
             <ProjectDescription>
-              Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+              Clone da interface do feed do nosso querido LinkedIn
             </ProjectDescription>
-            <ProjectLink>Vizualizar projeto</ProjectLink>
+            <ProjectLink
+              href="https://linkedin-homepage.vercel.app/"
+              target={"_blank"}
+            >
+              Vizualizar projeto
+            </ProjectLink>
           </Project>
         </ProjectsBox>
       </Content>

@@ -34,7 +34,9 @@ export const ProjectsBox = styled.div`
 export const Project = styled.div`
   flex: 1;
   display: flex;
+  height: 215px;
   flex-direction: column;
+  justify-content: space-between;
   min-width: 400px;
   background-color: #2c2c2c;
   padding: 40px;
