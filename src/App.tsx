@@ -1,4 +1,10 @@
-import { AboutMe, Experiences, Presentation, Projects } from "./components";
+import {
+  AboutMe,
+  Experiences,
+  Footer,
+  Presentation,
+  Projects,
+} from "./components";
 
 function App() {
   return (
@@ -7,6 +13,7 @@ function App() {
       <AboutMe />
       <Experiences />
       <Projects />
+      <Footer />
     </>
   );
 }
