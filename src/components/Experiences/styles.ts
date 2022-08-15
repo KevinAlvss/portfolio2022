@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -13,7 +12,7 @@ export const Content = styled.div`
   height: fit-content;
   margin: 0 auto;
 
-  padding: 0px 50px;
+  padding: 40px 50px;
 
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@ export const Content = styled.div`
 
 export const Title = styled.h2`
   text-transform: uppercase;
-  margin: 40px 0;
+  margin-bottom: 40px;
 `;
 
 export const ExperiencesBox = styled.div`

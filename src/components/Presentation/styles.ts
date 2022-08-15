@@ -45,6 +45,10 @@ export const Text = styled.p`
   @media (max-width: 990px) {
     font-size: 20px;
   }
+
+  @media (max-width: 460px) {
+    font-size: 14px;
+  }
 `;
 
 export const NameTitle = styled.h1`
@@ -58,6 +62,10 @@ export const NameTitle = styled.h1`
 
   @media (max-width: 990px) {
     font-size: 54px;
+  }
+
+  @media (max-width: 460px) {
+    font-size: 30px;
   }
 `;
 
@@ -84,8 +92,18 @@ export const Border = styled.div`
 export const LinkedInLink = styled.a`
   background-color: #121212;
   padding: 15px 50px;
+
+  @media (max-width: 460px) {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
 `;
 export const GitHubLink = styled.a`
   background-color: #121212;
   padding: 15px 50px;
+
+  @media (max-width: 460px) {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
 `;

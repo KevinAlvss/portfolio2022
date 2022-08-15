@@ -47,11 +47,20 @@ export const Project = styled.div`
   &:hover {
     border: 2px solid #00d2df;
   }
+
+  @media (max-width: 500px) {
+    min-width: 100%;
+    height: 250px;
+  }
 `;
 
 export const ProjectTitle = styled.h3`
   font-size: 22px;
   margin-bottom: 10px;
+
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 `;
 
 export const ProjectDescription = styled.p`

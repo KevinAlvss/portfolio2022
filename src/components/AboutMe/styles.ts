@@ -46,9 +46,17 @@ export const Title = styled.h2`
 export const Location = styled.h3`
   font-weight: 500;
   margin: 40px 0 21px 0;
+
+  @media (max-width: 460px) {
+    font-size: 16px;
+  }
 `;
 
 export const Text = styled.p`
   color: #c4c4c4;
   font-size: 18px;
+
+  @media (max-width: 460px) {
+    font-size: 14px;
+  }
 `;

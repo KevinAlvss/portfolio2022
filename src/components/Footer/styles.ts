@@ -21,4 +21,8 @@ export const Content = styled.div`
 
 export const Text = styled.p`
   color: #c4c4c4;
+
+  @media (max-width: 530px) {
+    margin: 10px 0;
+  }
 `;
