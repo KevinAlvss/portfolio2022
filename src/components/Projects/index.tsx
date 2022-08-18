@@ -13,9 +13,11 @@ export function Projects() {
   return (
     <Container>
       <Content>
-        <Title>Projetos</Title>
+        <Title data-aos="fade-down" data-aos-delay="300">
+          Projetos
+        </Title>
         <ProjectsBox>
-          <Project>
+          <Project data-aos="fade-down" data-aos-delay="600">
             <ProjectTitle>Password Generator</ProjectTitle>
             <ProjectDescription>
               Gerador de senhas interativo
@@ -27,7 +29,7 @@ export function Projects() {
               Vizualizar projeto
             </ProjectLink>
           </Project>
-          <Project>
+          <Project data-aos="fade-down" data-aos-delay="800">
             <ProjectTitle>Banco inter</ProjectTitle>
             <ProjectDescription>
               Estudo de animações e redesign do Banco Inter
@@ -39,7 +41,7 @@ export function Projects() {
               Vizualizar projeto
             </ProjectLink>
           </Project>
-          <Project>
+          <Project data-aos="fade-down" data-aos-delay="1000">
             <ProjectTitle>LinkedIn Feed</ProjectTitle>
             <ProjectDescription>
               Clone da interface do feed do nosso querido LinkedIn

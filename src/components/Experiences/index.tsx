@@ -1,4 +1,3 @@
-import Aos from "aos";
 import { useEffect, useState } from "react";
 import {
   Container,
@@ -38,11 +37,6 @@ export function Experiences() {
   }
 
   useEffect(() => {
-    Aos.init({
-      duration: 800,
-      easing: "ease-in-out",
-    });
-
     handleExperience("zak");
   }, []);
 
