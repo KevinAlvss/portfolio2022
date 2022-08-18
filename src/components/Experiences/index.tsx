@@ -1,3 +1,4 @@
+import Aos from "aos";
 import { useEffect, useState } from "react";
 import {
   Container,
@@ -37,16 +38,23 @@ export function Experiences() {
   }
 
   useEffect(() => {
+    Aos.init({
+      duration: 800,
+      easing: "ease-in-out",
+    });
+
     handleExperience("zak");
   }, []);
 
   return (
     <Container>
       <Content>
-        <Title>Experiencias</Title>
+        <Title data-aos="fade-down" data-aos-delay="300">
+          Experiencias
+        </Title>
         <ExperiencesBox>
           <Experience>
-            <InterpriseBox>
+            <InterpriseBox data-aos="fade-down" data-aos-delay="600">
               <InterpriseButton onClick={() => handleExperience("zak")}>
                 ZAK
               </InterpriseButton>
@@ -55,7 +63,7 @@ export function Experiences() {
               </InterpriseButton>
             </InterpriseBox>
           </Experience>
-          <Experience>
+          <Experience data-aos="fade-down" data-aos-delay="800">
             <ExperienceTitle>{experienceTitle}</ExperienceTitle>
             <ExperienceInterprise>{experienceInterprise}</ExperienceInterprise>
             <ExperienceDescription>
