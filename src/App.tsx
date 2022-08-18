@@ -5,6 +5,7 @@ import {
   Presentation,
   Projects,
 } from "./components";
+import "aos/dist/aos.css";
 
 function App() {
   return (
